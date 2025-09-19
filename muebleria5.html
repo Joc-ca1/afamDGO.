@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="icon" href="favicon.png" type="image/png">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muebles BYCSA</title>
+  <link rel="stylesheet" href="muebleria5.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="search.js"></script>
+</head>
+
+<header>
+    <button class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <div class="logo">
+    <img src="imagen/logo.png" alt="Sector Mueblero de Durango" class="logo-img">
+    </div>
+
+    
+    <nav id="mobileNav">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="eventos.html">EVENTOS</a></li>
+            <li class="dropdown">
+                <a href="#">CATEGORIAS</a>
+                <ul class="dropdown-content">
+                    <li><a href="comedores.html">Comedor</a></li>
+                    <li><a href="buffeteros.html">Buffeteros</a></li>
+                    <li><a href="cocinas.html">Cocinas</a></li>
+                    <li><a href="islas.html">Islas</a></li>
+                    <li><a href="recamaras.html">Recámaras</a></li>
+                    <li><a href="Salas.html">Salas</a></li>
+                    <li><a href="silloneskids.html">Sillones para niños</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#equipo">EQUIPO</a></li>
+            <li><a href="index.html#contacto">CONTACTO</a></li>
+            <div class="search-container">
+              <input type="text" placeholder="Buscar...">
+              <button><i class="fas fa-search"></i></button>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section class="catalogo">
+        <h2 class="titulo-catalogo">Muebles BYCSA</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('todos')">Todos</button>
+            <button class="filter-btn" onclick="filterProducts('sala')">Salas</button>
+            <button class="filter-btn" onclick="filterProducts('cama')">Camas</button>
+            <button class="filter-btn" onclick="filterProducts('Sillón')">Sillones</button>
+        </div>
+
+        <div class="grid-mueblerias">
+            
+              <!-- Sala Cindy Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Cindy', 'BYCSA/salas ia/cindy 2.png', 'Sala', 'Medidas disponibles', 'Sala Cindy con diseño moderno y confortable, vista alternativa.')">
+                <img src="BYCSA/salas ia/cindy 2.png" alt="Sala Cindy" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Cindy</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+            <!-- Sala Ariana -->
+            <div class="muebleria" onclick="openModal('Sala Ariana', 'BYCSA/salas ia/Sala ariana g.png', 'Sala', 'Medidas disponibles', 'Sala Ariana con acabado elegante y cómodos asientos.')">
+                <img src="BYCSA/salas ia/Sala ariana g.png" alt="Sala Ariana" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Ariana</h3>
+                    <p>Diseño moderno y confortable</p>
+                </div>
+            </div>
+
+             <!-- Sala Valencia Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Valencia', 'BYCSA/salas ia/valencia.png', 'Sala', 'Medidas disponibles', 'Sala Valencia con diseño moderno y elegante.')">
+                <img src="BYCSA/salas ia/valencia.png" alt="Sala Valencia" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Valencia</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+            <!-- Sala Valencia Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Valencia', 'BYCSA/salas ia/valencia 2.png', 'Sala', 'Medidas disponibles', 'Sala Valencia con diseño moderno y elegante, vista alternativa.')">
+                <img src="BYCSA/salas ia/valencia 2.png" alt="Sala Valencia" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Valencia</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+             
+
+            <!-- Sala Victoria Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Victoria', 'BYCSA/salas ia/victoria 2.png', 'Sala', 'Medidas disponibles', 'Sala Victoria con diseño contemporáneo y elegante.')">
+                <img src="BYCSA/salas ia/victoria 2.png" alt="Sala Victoria" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Victoria</h3>
+                    <p>Diseño contemporáneo</p>
+                </div>
+            </div>
+
+            <!-- Sala Victoria Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Victoria', 'BYCSA/salas ia/visctoria.png', 'Sala', 'Medidas disponibles', 'Sala Victoria con diseño contemporáneo y elegante, vista alternativa.')">
+                <img src="BYCSA/salas ia/visctoria.png" alt="Sala Victoria" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Victoria</h3>
+                    <p>Diseño contemporáneo</p>
+                </div>
+            </div>
+
+
+            <!-- Sala Galicia -->
+            <div class="muebleria" onclick="openModal('Sala Galicia', 'BYCSA/salas ia/Sala galicia.png', 'Sala', 'Medidas disponibles', 'Sala Galicia con diseño contemporáneo.')">
+                <img src="BYCSA/salas ia/Sala galicia.png" alt="Sala Galicia" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Galicia</h3>
+                    <p>Estilo contemporáneo</p>
+                </div>
+            </div>
+
+            <!-- Sala Junior -->
+            <div class="muebleria" onclick="openModal('Sala Junior', 'BYCSA/salas ia/Sala junior.png', 'Sala', 'Medidas disponibles', 'Sala Junior con diseño versátil y moderno.')">
+                <img src="BYCSA/salas ia/Sala junior.png" alt="Sala Junior" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Junior</h3>
+                    <p>Diseño versátil</p>
+                </div>
+            </div>
+
+            <!-- Sala Paulina -->
+            <div class="muebleria" onclick="openModal('Sala Paulina', 'BYCSA/salas ia/Sala paulina 1.png', 'Sala', 'Medidas disponibles', 'Sala Paulina con diseño elegante y confortable.')">
+                <img src="BYCSA/salas ia/Sala paulina 1.png" alt="Sala Paulina" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Paulina</h3>
+                    <p>Elegancia y confort</p>
+                </div>
+            </div>
+
+            <!-- Sala Paulina -->
+            <div class="muebleria" onclick="openModal('Sala Paulina', 'BYCSA/salas ia/Sala paulina 2.png', 'Sala', 'Medidas disponibles', 'Sala Paulina con diseño elegante y confortable, vista alternativa.')">
+                <img src="BYCSA/salas ia/Sala paulina 2.png" alt="Sala Paulina" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Paulina</h3>
+                    <p>Elegancia y confort</p>
+                </div>
+            </div>
+
+            <!-- Sala Toronto -->
+            <div class="muebleria" onclick="openModal('Sala Toronto', 'BYCSA/salas ia/Toronto.png', 'Sala', 'Medidas disponibles', 'Sala Toronto con diseño moderno y acabados de primera calidad.')">
+                <img src="BYCSA/salas ia/Toronto.png" alt="Sala Toronto" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Toronto</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+            <!-- Sala Alejandra -->
+            <div class="muebleria" onclick="openModal('Sala Alejandra', 'BYCSA/salas ia/alejandra.png', 'Sala', 'Medidas disponibles', 'Sala Alejandra con diseño sofisticado y cómodo.')">
+                <img src="BYCSA/salas ia/alejandra.png" alt="Sala Alejandra" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Alejandra</h3>
+                    <p>Diseño sofisticado</p>
+                </div>
+            </div>
+
+            <!-- Sala Andrea -->
+            <div class="muebleria" onclick="openModal('Sala Andrea', 'BYCSA/salas ia/andrea.png', 'Sala', 'Medidas disponibles', 'Sala Andrea con diseño contemporáneo y elegante.')">
+                <img src="BYCSA/salas ia/andrea.png" alt="Sala Andrea" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Andrea</h3>
+                    <p>Diseño contemporáneo</p>
+                </div>
+            </div>
+
+            <!-- Sala Boston Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Boston', 'BYCSA/salas ia/boston.png', 'Sala', 'Medidas disponibles', 'Sala Boston con diseño clásico y elegante.')">
+                <img src="BYCSA/salas ia/boston.png" alt="Sala Boston" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Boston</h3>
+                    <p>Diseño clásico</p>
+                </div>
+            </div>
+
+            <!-- Sala Boston Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Boston', 'BYCSA/salas ia/boston 2.png', 'Sala', 'Medidas disponibles', 'Sala Boston con diseño clásico y elegante, vista alternativa.')">
+                <img src="BYCSA/salas ia/boston 2.png" alt="Sala Boston" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Boston</h3>
+                    <p>Diseño clásico</p>
+                </div>
+            </div>
+
+            <!-- Sala Careyes Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Careyes', 'BYCSA/salas ia/careyes.png', 'Sala', 'Medidas disponibles', 'Sala Careyes con diseño moderno y confortable.')">
+                <img src="BYCSA/salas ia/careyes.png" alt="Sala Careyes" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Careyes</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+            <!-- Sala Careyes Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Careyes', 'BYCSA/salas ia/careyes 2.png', 'Sala', 'Medidas disponibles', 'Sala Careyes con diseño moderno y confortable, vista alternativa.')">
+                <img src="BYCSA/salas ia/careyes 2.png" alt="Sala Careyes" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Careyes</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+            <!-- Sala Caribel Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Caribel', 'BYCSA/salas ia/caribel.png', 'Sala', 'Medidas disponibles', 'Sala Caribel con diseño contemporáneo y elegante.')">
+                <img src="BYCSA/salas ia/caribel.png" alt="Sala Caribel" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Caribel</h3>
+                    <p>Diseño contemporáneo</p>
+                </div>
+            </div>
+
+            <!-- Sala Caribel Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Caribel', 'BYCSA/salas ia/caribel 2.png', 'Sala', 'Medidas disponibles', 'Sala Caribel con diseño contemporáneo y elegante, vista alternativa.')">
+                <img src="BYCSA/salas ia/caribel 2.png" alt="Sala Caribel" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Caribel</h3>
+                    <p>Diseño contemporáneo</p>
+                </div>
+            </div>
+
+            <!-- Sala Cindy Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Cindy', 'BYCSA/salas ia/cindy.png', 'Sala', 'Medidas disponibles', 'Sala Cindy con diseño moderno y confortable.')">
+                <img src="BYCSA/salas ia/cindy.png" alt="Sala Cindy" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Cindy</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+          
+            <!-- Sala Karla Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Karla', 'BYCSA/salas ia/karla.png', 'Sala', 'Medidas disponibles', 'Sala Karla con diseño elegante y sofisticado.')">
+                <img src="BYCSA/salas ia/karla.png" alt="Sala Karla" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Karla</h3>
+                    <p>Diseño elegante</p>
+                </div>
+            </div>
+
+            <!-- Sala Karla Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Karla', 'BYCSA/salas ia/karla 2.png', 'Sala', 'Medidas disponibles', 'Sala Karla con diseño elegante y sofisticado, vista alternativa.')">
+                <img src="BYCSA/salas ia/karla 2.png" alt="Sala Karla" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Karla</h3>
+                    <p>Diseño elegante</p>
+                </div>
+            </div>
+
+            <!-- Sala Roma Vista 1 -->
+            <div class="muebleria" onclick="openModal('Sala Roma', 'BYCSA/salas ia/roma.png', 'Sala', 'Medidas disponibles', 'Sala Roma con diseño clásico y elegante.')">
+                <img src="BYCSA/salas ia/roma.png" alt="Sala Roma" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Roma</h3>
+                    <p>Diseño clásico</p>
+                </div>
+            </div>
+
+            <!-- Sala Roma Vista 2 -->
+            <div class="muebleria" onclick="openModal('Sala Roma', 'BYCSA/salas ia/roma 2.png', 'Sala', 'Medidas disponibles', 'Sala Roma con diseño clásico y elegante, vista alternativa.')">
+                <img src="BYCSA/salas ia/roma 2.png" alt="Sala Roma" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Roma</h3>
+                    <p>Diseño clásico</p>
+                </div>
+            </div>
+
+        
+            <!-- Sala ariana r -->
+            <div class="muebleria" onclick="openModal('Sala Ariana', 'BYCSA/salas ia/Sala ariana r.png', 'Sala', 'Medidas disponibles', 'Sala ariana con diseño contemporáneo y elegante, vista alternativa.')">
+                <img src="BYCSA/salas ia/Sala ariana r.png" alt="Sala Ariana" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Ariana</h3>
+                    <p>Diseño moderno</p>
+                </div>
+            </div>
+
+            <!-- Sala junior azul -->
+            <div class="muebleria" onclick="openModal('Sala Junior', 'BYCSA/salas ia/Sala junior azul.png', 'Sala', 'Medidas disponibles', 'Sala Victoria con diseño contemporáneo y elegante, vista alternativa.')">
+                <img src="BYCSA/salas ia/Sala junior azul.png" alt="Sala Junior Azul" />
+                <div class="info">
+                    <p>Sala</p>
+                    <h3>Sala Junior</h3>
+                    <p>Diseño contemporáneo</p>
+                </div>
+            </div>
+
+             <!-- Base de cama -->
+        <div class="muebleria" onclick="openModal('Base de Cama', 'BYCSA/camas ia/Base de cama.png', 'Cama', 'Medidas disponibles en Individual, Matrimonial, Queen Size y King Size', 'Base de cama con diseño moderno y resistente.')">
+            <img src="BYCSA/camas ia/Base de cama.png" alt="Base de Cama" />
+            <div class="info">
+                <p>Cama</p>
+                <h3>Base de Cama</h3>
+                <p>Diseño moderno</p>
+            </div>
+        </div>
+
+        <!-- Cabecera -->
+        <div class="muebleria" onclick="openModal('Cabecera', 'BYCSA/camas ia/Cabecera.png', 'Cama', 'Medidas disponibles en Individual, Matrimonial, Queen Size y King Size', 'Cabecera elegante con acabados de alta calidad.')">
+            <img src="BYCSA/camas ia/Cabecera.png" alt="Cabecera" />
+            <div class="info">
+                <p>Cama</p>
+                <h3>Cabecera</h3>
+                <p>Diseño elegante</p>
+            </div>
+        </div>
+
+        <!-- Cama Emma Vista 1 -->
+        <div class="muebleria" onclick="openModal('Cama Emma', 'BYCSA/camas ia/Cama emma 1.png', 'Cama', 'Medidas disponibles en Individual, Matrimonial, Queen Size y King Size', 'Cama Emma con diseño contemporáneo y acabados de lujo.')">
+            <img src="BYCSA/camas ia/Cama emma 1.png" alt="Cama Emma" />
+            <div class="info">
+                <p>Cama</p>
+                <h3>Cama Emma</h3>
+                <p>Diseño contemporáneo</p>
+            </div>
+        </div>
+
+        <!-- Cama Emma Vista 2 -->
+        <div class="muebleria" onclick="openModal('Cama Emma', 'BYCSA/camas ia/Cama emma 2.png', 'Cama', 'Medidas disponibles en Individual, Matrimonial, Queen Size y King Size', 'Cama Emma con diseño contemporáneo y acabados de lujo, vista alternativa.')">
+            <img src="BYCSA/camas ia/Cama emma 2.png" alt="Cama Emma" />
+            <div class="info">
+                <p>Cama</p>
+                <h3>Cama Emma</h3>
+                <p>Diseño contemporáneo</p>
+            </div>
+        </div>
+
+        <!-- Cama Gala -->
+        <div class="muebleria" onclick="openModal('Cama Gala', 'BYCSA/camas ia/Cama gala.png', 'Cama', 'Medidas disponibles en Individual, Matrimonial, Queen Size y King Size', 'Cama Gala con diseño elegante y sofisticado.')">
+            <img src="BYCSA/camas ia/Cama gala.png" alt="Cama Gala" />
+            <div class="info">
+                <p>Cama</p>
+                <h3>Cama Gala</h3>
+                <p>Diseño sofisticado</p>
+            </div>
+        </div>
+
+        <!-- Cama Mila -->
+        <div class="muebleria" onclick="openModal('Cama Mila', 'BYCSA/camas ia/Cama mila.png', 'Cama', 'Medidas disponibles en Individual, Matrimonial, Queen Size y King Sizes', 'Cama Mila con diseño moderno y confortable.')">
+            <img src="BYCSA/camas ia/Cama mila.png" alt="Cama Mila" />
+            <div class="info">
+                <p>Cama</p>
+                <h3>Cama Mila</h3>
+                <p>Diseño moderno</p>
+            </div>
+        </div>
+
+         <!-- Sillón Kids Vista 1 -->
+    <div class="muebleria" onclick="openModal('Sillón Kids', 'BYCSA/sillones ia/kids.png', 'Sillón', 'Medidas disponibles', 'Sillón Kids con diseño especial para niños.')">
+        <img src="BYCSA/sillones ia/kids.png" alt="Sillón Kids" />
+        <div class="info">
+            <p>Sillón</p>
+            <h3>Sillón Kids</h3>
+            <p>Diseño infantil</p>
+        </div>
+    </div>
+
+    <!-- Sillón Kids Vista 2 -->
+    <div class="muebleria" onclick="openModal('Sillón Kids', 'BYCSA/sillones ia/kids 2.png', 'Sillón', 'Medidas disponibles', 'Sillón Kids con diseño especial para niños, vista alternativa.')">
+        <img src="BYCSA/sillones ia/kids 2.png" alt="Sillón Kids" />
+        <div class="info">
+            <p>Sillón</p>
+            <h3>Sillón Kids</h3>
+            <p>Diseño infantil</p>
+        </div>
+    </div>
+
+    <!-- Sillón Kids Vista 3 -->
+    <div class="muebleria" onclick="openModal('Sillón Kids', 'BYCSA/sillones ia/kids 3.png', 'Sillón', 'Medidas disponibles', 'Sillón Kids con diseño especial para niños, vista adicional.')">
+        <img src="BYCSA/sillones ia/kids 3.png" alt="Sillón Kids" />
+        <div class="info">
+            <p>Sillón</p>
+            <h3>Sillón Kids</h3>
+            <p>Diseño infantil</p>
+        </div>
+    </div>
+
+    <!-- Sillón Loto -->
+    <div class="muebleria" onclick="openModal('Sillón Loto', 'BYCSA/sillones ia/loto.png', 'Sillón', 'Medidas disponibles', 'Sillón Loto con diseño moderno y confortable.')">
+        <img src="BYCSA/sillones ia/loto.png" alt="Sillón Loto" />
+        <div class="info">
+            <p>Sillón</p>
+            <h3>Sillón Loto</h3>
+            <p>Diseño moderno</p>
+        </div>
+    </div>
+
+    <!-- Sillón Luca -->
+    <div class="muebleria" onclick="openModal('Sillón Luca', 'BYCSA/sillones ia/luca.png', 'Sillón', 'Medidas disponibles', 'Sillón Luca con diseño contemporáneo y elegante.')">
+        <img src="BYCSA/sillones ia/luca.png" alt="Sillón Luca" />
+        <div class="info">
+            <p>Sillón</p>
+            <h3>Sillón Luca</h3>
+            <p>Diseño contemporáneo</p>
+        </div>
+    </div>
+
+
+        </div>
+        
+    </section> <!-- Modal para detalles del producto -->
+    <!-- Modal para detalles del producto -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="Imagen del producto">
+            <div class="modal-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-category"></p>
+                <p id="modal-dimensions"></p>
+                <p id="modal-description"></p>
+            </div>
+    </div>
+
+    <script src="muebleria5.js"></script>
